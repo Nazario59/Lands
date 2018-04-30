@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Application 
+    xmlns="http://xamarin.com/schemas/2014/forms"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    xmlns:infra="clr-namespace:Lands.Infrastructure"
+    x:Class="Lands.App">
+    <!--Hemos creado el objeto infra-->
+    
+	<Application.Resources>
+        <!--Por aquí arranca la aplicación-->
+		<!-- Application resource dictionary -->
+        <ResourceDictionary>
+            <infra:InstanceLocator x:Key="Locator"/>
+            <!--InstanceLocator se encuentra en infra e infra se encuentra en Lands.Infrastructure
+            sirve para relacionar la MainViewModel con la LoginPage -->
+        </ResourceDictionary>
+
+	</Application.Resources>
+</Application>
